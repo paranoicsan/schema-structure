@@ -2,7 +2,10 @@
 
 The markup which is placed right before any parsed tag. Contains the data from document-metadata tables.
 
-Type: [CreativeWork](http://schema.org/CreativeWork)
+**Type:** [CreativeWork](http://schema.org/CreativeWork)  
+**Contains:**
+- [Sections](./section.md)
+- Standalone tags
  
 ### Properties:
 

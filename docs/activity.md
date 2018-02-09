@@ -1,6 +1,9 @@
-# ActivityMetadataTypeTag (MATH activity)
+# Activity
 
-Type: [CreativeWork](http://schema.org/CreativeWork)
+**Belongs to:** [Section](./section.md)  
+**Type:** [CreativeWork](http://schema.org/CreativeWork)  
+**Math:** ActivityMetadataTypeTag  
+**ELA:** SectionTag
  
 ### Properties:
 
@@ -15,18 +18,21 @@ Type: [CreativeWork](http://schema.org/CreativeWork)
 |name|type|description|
 |----|----|-----------|
 |activityAlert|[Text](http://schema.org/Text)|linked to grade field|
+|activityCcssStrand|[AlignmentObject](http://schema.org/AlignmentObject)|[AlignmentObject](http://schema.\org/AlignmentObject)'s targetName contains the data|
+|activityCcssSubstrand|[AlignmentObject](http://schema.org/AlignmentObject)|[AlignmentObject](http://schema.\org/AlignmentObject)'s targetName contains the data|
+|activityGroupSize|[Text](http://schema.org/Text)|linked to group_size field|
 |activityGuidance|[Text](http://schema.org/Text)|linked to lesson field|
-|activityIsFoundational|[AlignmentObject](http://schema.org/AlignmentObject)|[AlignmentObject](http://schema.\org/AlignmentObject)'s targetName contains the data|
-|activityIsOptional|[LearningObjective](http://oerschema.org/LearningObjective)|[LearningObjective](http://oerschema.org/LearningObjective)'s targetName contains the data|
+|activityIsFoundational|[Text](http://schema.org/Text)|linked to is_foundational field|
+|activityIsOptional|[Text](http://schema.org/Text)|linked to is_optional field|
 |activityMaterials|[ItemList](http://schema.org/ItemList)|[values](#materials)|
-|activityMetacognition|[AlignmentObject](http://schema.org/AlignmentObject)|[AlignmentObject](http://schema.org/AlignmentObject)'s targetName contains the data|
-|activityPriorityDescription|[category](http://schema.org/category)||
+|activityMetacognition|[Text](http://schema.org/Text)|linked to metacognition field|
+|activityPriorityDescription|[category](http://schema.org/category)|linked to priority_description field|
 |activityPriorityValue|[Text](http://schema.org/Text)|linked to teaser field|
 |activityStandards|[ItemList](http://schema.org/ItemList)|[values](#standards)|
 |learningResourceType|[Text](http://schema.org/Text)|linked to activity_type field|
-|type|[Text](http://schema.org/Text)|value: _MathActivity_|
+|type|[Text](http://schema.org/Text)|value: _MathActivity_ or _ELASection_|
 
-#### activityMaterials<a href="materials"></a>
+#### activityMaterials<a name="materials"></a>
 
 Type: [ItemList](http://schema.org/ItemList)
 
@@ -37,7 +43,7 @@ properties:
 |----|----|-----------|
 |targetName|[Text](http://schema.org/Text)|linked to material name|
 
-#### activityStandards<a href="standards"></a>
+#### activityStandards<a name="standards"></a>
 
 Type: [ItemList](http://schema.org/ItemList)
 
@@ -51,6 +57,8 @@ properties:
 
 
 ### Example
+
+MATH activity:
 
 ```html
 <div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/CreativeWork">
@@ -88,5 +96,53 @@ properties:
             <span itemprop="targetDescription">Read and write multi-digit whole numbers using...</span>
         </li>
     </ul>
+</div>
+```
+
+ELA activity:
+
+```html
+<div itemscope="" itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="activityIsOptional" content="false">
+    <meta itemprop="activityGroupSize" content="Whole, Small">
+    <meta itemprop="type" content="ELASection">
+    <div itemprop="activityCcssStrand" itemscope="" itemtype="http://schema.org/AlignmentObject">
+        <meta itemprop="targetName" content="Strand here">
+    </div>
+    <div itemprop="activityCcssSubstrand" itemscope="" itemtype="http://schema.org/AlignmentObject">
+        <meta itemprop="targetName" content="Substrand here">
+    </div>
+    <ul itemprop="activityMaterials" itemscope="" itemtype="http://schema.org/ItemList">
+        <meta itemprop="name" content="Materials">
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <span itemprop="name">ELA-G2-M1-U1-SW-Story Map</span>
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <span itemprop="name">chart paper</span>
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <span itemprop="name">chalkboard</span>
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <span itemprop="name">or whiteboard</span>
+        </li>
+    </ul>
+    <ul itemprop="activityStandards" itemscope="" itemtype="http://schema.org/ItemList">
+        <meta itemprop="name" content="Standards">
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/AlignmentObject">
+            <span itemprop="targetNamet">ELA.SL.2.2</span>
+            <span itemprop="targetDescription">Recount or describe key ideas or details from a text read...</span>
+        </li>
+    </ul>
+    <hr>
+    <div>
+        <h3>
+            <div>
+                <span itemprop="name">Retelling the Read-Aloud</span>
+            </div>
+            <div itemprop="timeRequired"> 20 mins</div>
+        </h3>
+        <div itemprop="activityMetacognition"> Conduct an application activity...</div>
+    </div>
 </div>
 ```
