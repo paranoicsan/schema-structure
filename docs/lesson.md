@@ -28,7 +28,7 @@ Type: [CreativeWork](http://schema.org/CreativeWork)
 |type|[LearningComponent](http://oerschema.org/LearningComponent)|[LearningComponent](http://oerschema.org/LearningComponent)'s mainContent contains the data|
 |unit|Text|linked to unit field|
 
-### Examples
+### Example
 
 ```html
 <div itemscope="" itemtype="http://schema.org/CreativeWork"  data-scroll="ld-page" id="ld-page">
