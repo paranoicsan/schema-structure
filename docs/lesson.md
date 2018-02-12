@@ -11,9 +11,9 @@ The markup which is placed right before any parsed tag. Contains the data from d
 
 |name|type|description|
 |----|----|-----------|
-|description|Text|linked to description field|
-|licence|Text|linked to cc-attribution field|
-|name|Text|linked to title field|
+|description|[Text](http://schema.org/Text)|linked to description field|
+|licence|[Text](http://schema.org/Text)|linked to cc-attribution field|
+|name|[Text](http://schema.org/Text)|linked to title field|
 
 ### Custom properties:
 
@@ -26,10 +26,10 @@ The markup which is placed right before any parsed tag. Contains the data from d
 |lessonStandard|[AlignmentObject](http://schema.org/AlignmentObject)|[AlignmentObject](http://schema.org/AlignmentObject)'s mainContent contains the data|
 |standard|[AlignmentObject](http://schema.org/AlignmentObject)|[AlignmentObject](http://schema.org/AlignmentObject)'s targetName contains the data|
 |subject|[category](http://schema.org/category)||
-|teaser|Text|linked to teaser field|
+|teaser|[Text](http://schema.org/Text)|linked to teaser field|
 |topic|[Topic](http://oerschema.org/Topic)|[Topic](http://oerschema.org/Topic)'s mainContent contains the data|
 |type|[LearningComponent](http://oerschema.org/LearningComponent)|[LearningComponent](http://oerschema.org/LearningComponent)'s mainContent contains the data|
-|unit|Text|linked to unit field|
+|unit|[Text](http://schema.org/Text)|linked to unit field|
 
 ### Example
 

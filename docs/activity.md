@@ -1,7 +1,31 @@
 # Activity
 
 **Belongs to:** [Section](./section.md)  
-**Type:** [CreativeWork](http://schema.org/CreativeWork)  
+**Type:** [CreativeWork](http://schema.org/CreativeWork)
+**Contains:**
+- [Callout](./tags/callout.md)  
+- [Core Content Objectives](./tags/core-content-objectives.md)  
+- [Def](./tags/def.md)  
+- [Dialogue](./tags/dialogue.md)  
+- [Expand](./tags/expand.md)
+- [Gls](./tags/gls.md)
+- Heading tags:   
+  - [Et](./tags/et.md)
+  - [Sh](./tags/sh.md)
+  - [Th](./tags/th.md)
+  - [Key](./tags/key.md)  
+- [Image](./tags/image.md)  
+- [Image Student Worksheet](./tags/image-student-worksheet.md)  
+- [Language Arts Objectives](./tags/language-arts-objectives.md)
+- Link tags:
+  - [Qrd](./tags/qrd.md)
+  - [Pos](./tags/pos.md) 
+- [Optional Break](./tags/opt-break.md)  
+- [Pd](./tags/pd.md)  
+- [Smp](./tags/smp.md)
+- [Standard](./tags/standard.md)
+- [Vocab](./tags/vocab.md)
+  
 **Math:** ActivityMetadataTypeTag  
 **ELA:** SectionTag
  
@@ -9,9 +33,9 @@
 
 |name|type|description|
 |----|----|-----------|
-|learningResourceType|Text|linked to activity_type field|
-|name|Text|linked to title field|
-|timeRequired|Duration|linked to time field. **TODO**: need to transform the time to [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)|
+|learningResourceType|[Text](http://schema.org/Text)|linked to activity_type field|
+|name|[Text](http://schema.org/Text)|linked to title field|
+|timeRequired|[Duration](http://schema.org/Duration)|linked to time field. **TODO**: need to transform the time to [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)|
 
 ### Custom properties:
 
