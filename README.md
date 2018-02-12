@@ -3,7 +3,25 @@
 - [Lesson](docs/lesson.md)  
   - [Section](docs/section.md)
     - [Activity](docs/activity.md)
- 
-
-
-
+      - [Callout](docs/tags/callout.md)  
+      - [Core Content Objectives](docs/tags/core-content-objectives.md)  
+      - [Def](docs/tags/def.md)  
+      - [Dialogue](docs/tags/dialogue.md)  
+      - [Expand](docs/tags/expand.md)
+      - [Gls](docs/tags/gls.md)
+      - Heading tags:   
+        - [Et](docs/tags/et.md)
+        - [Sh](docs/tags/sh.md)
+        - [Th](docs/tags/th.md)
+        - [Key](docs/tags/key.md)  
+      - [Image](docs/tags/image.md)  
+      - [Image Student Worksheet](docs/tags/image-student-worksheet.md)  
+      - [Language Arts Objectives](docs/tags/language-arts-objectives.md)
+      - Link tags:
+        - [Qrd](docs/tags/qrd.md)
+        - [Pos](docs/tags/pos.md) 
+      - [Optional Break](docs/tags/opt-break.md)  
+      - [Pd](docs/tags/pd.md)  
+      - [Smp](docs/tags/smp.md)
+      - [Standard](docs/tags/standard.md)
+      - [Vocab](docs/tags/vocab.md) 
